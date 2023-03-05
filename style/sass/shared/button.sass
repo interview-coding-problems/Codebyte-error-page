@@ -1,0 +1,14 @@
+@mixin button($padding, $border-radius)
+    padding: $padding 
+    border-radius: $border-radius
+    border: unset
+    background-color: $button-background
+    color: $buton-text 
+    text-align: center
+    +transition(0.2s)
+    +transition-timing-function(easy-in-out)
+    +transition-property(background-color)
+    &:hover
+        background-color: $button-background-hover
+.button 
+    +button(20px 0, 4px)

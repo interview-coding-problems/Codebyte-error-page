@@ -1,0 +1,10 @@
+@mixin text_basic ($color)
+    color: $color
+    line-height: 1.5
+.text
+    &_xl
+        +text_basic($paragraph-color)
+    &-bold
+        font-weight: 700
+    &-normal
+        font-weight: 400

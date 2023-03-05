@@ -1,0 +1,9 @@
+@mixin title_color($color)
+    color: $color !important
+.title
+    &_xxl
+        +title_color($white)
+        font-size: 42px
+        @media screen and(max-width: 600px)
+            font-size: 29px 
+

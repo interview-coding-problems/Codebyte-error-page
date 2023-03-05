@@ -1,0 +1,33 @@
+@mixin bg_color($color)
+    background-color: $color
+@mixin bg_image($image)
+    background: url($image)
+    background-size: cover
+    beckground-repeat: no-repeate
+.bg
+    &_white
+        +bg_color($white)
+    &_lighgrey
+        +bg_color($grey_light)
+        &_pattern
+            background: url('~@/assets/pattern.svg')
+            background-size: cover
+            beckground-repeat: no-repeate
+    &_blue
+        +bg_color($blue_dark)
+    &_red
+        +bg_color(#4a2648)
+        &--light
+            +bg_color($red)
+    &_image
+        &-arrow
+            +bg_image('~@/assets/pattern.svg')
+    &_greyscale
+        background-color: #cecece
+        filter: contrast(0.5)img--animated
+    &_blur 
+        background-color: rgba(0,0 ,0 ,0.4 )
+    &_blur-strong 
+        background-color: rgba(0,0 ,0 ,0.6 )
+    &_baner 
+        background-color: rgba(42, 81, 181,0.4 ) !important
