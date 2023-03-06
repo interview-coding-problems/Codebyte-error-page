@@ -1,2 +1,2 @@
 # Codebyte-error-page
-Coding challenge for Codebyte
+Coding challenge for Videobolt
