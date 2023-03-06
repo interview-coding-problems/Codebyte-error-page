@@ -1,2 +1,2 @@
 # Codebyte-error-page
-Coding challenge
+Coding challenge for Codebyte
